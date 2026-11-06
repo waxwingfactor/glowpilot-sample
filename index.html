@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>GlowPilot · product film opening (spec sample)</title>
-<meta name="description" content="A 29-second opening for a GlowPilot sales-page film: cinematic AI shots, a software demo, narration, music and sound design.">
-<meta property="og:title" content="GlowPilot · product film opening (spec sample)">
-<meta property="og:description" content="A 29-second opening for a GlowPilot sales-page film: cinematic AI shots, a software demo, narration, music and sound design.">
+<title>GlowPilot and Tidypane · product film openings (spec samples)</title>
+<meta name="description" content="Two 29-second openings for software sales-page films, GlowPilot and Tidypane: cinematic AI shots, software demos, narration, music and sound design.">
+<meta property="og:title" content="GlowPilot and Tidypane · product film openings (spec samples)">
+<meta property="og:description" content="Two 29-second openings for software sales-page films, GlowPilot and Tidypane: cinematic AI shots, software demos, narration, music and sound design.">
 <meta property="og:image" content="https://waxwingfactor.github.io/glowpilot-sample/media/glowpilot-poster.jpg?v=1">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +40,11 @@
   figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); }
   figcaption { margin-top: 10px; font-size: 14px; color: var(--mute); }
   figcaption b { color: var(--ink); font-weight: 600; }
+  .film2 { margin-top: clamp(72px, 11vh, 120px); padding-top: clamp(48px, 7vh, 72px); border-top: 1px solid var(--line); }
+  .film2 .kicker { color: #3FD6C4; }
+  .film2 h1 em { background: linear-gradient(180deg, #A7F3E8, #0FB5A3 60%, #0A8F82); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .film2 .player { background: linear-gradient(135deg, rgba(63,214,196,.55), rgba(255,255,255,.06) 40%, rgba(15,181,163,.35)); box-shadow: 0 30px 90px rgba(0,0,0,.6), 0 0 80px rgba(15,181,163,.10); }
+  .film2 .card b i { border-color: #3FD6C4; box-shadow: 0 0 8px #3FD6C4; }
   .note { margin-top: clamp(40px, 6vh, 60px); padding-top: 22px; border-top: 1px solid var(--line); color: var(--mute); font-size: 13.5px; text-align: center; }
   .note p { margin: 0 auto 6px; max-width: 760px; }
   @media (max-width: 820px) { .cols, .pair { grid-template-columns: 1fr; } }
@@ -74,9 +79,38 @@
     </div>
   </section>
 
+  <div class="film2">
+    <p class="kicker">Second sample · made-up product</p>
+    <h1>Same format, new product: <em>Tidypane</em></h1>
+    <p class="sub">A window-layout app for Windows · 16:9 · 1920 × 1080 · 29 s · a daylight look, a light interface, a different voice and score</p>
+
+    <div class="player">
+      <video controls playsinline preload="metadata" poster="media/tidypane-poster.jpg?v=1">
+        <source src="media/tidypane-snippet.mp4?v=1" type="video/mp4">
+      </video>
+    </div>
+
+    <section>
+      <h2>What's in the cut</h2>
+      <div class="cols">
+        <div class="card"><b><i></i>Cinematic AI shots</b><p>A loft desk, the reverse close-up, glass panes that lock into a layout, and the same man at golden hour. Lighting and set stay consistent from both sides of the desk.</p></div>
+        <div class="card"><b><i></i>Software demo</b><p>Drag a window and the snap zones appear. Save a layout, let the windows scatter, then bring it all back with one key. A chat app opens where its rule puts it.</p></div>
+        <div class="card"><b><i></i>Narration and sound</b><p>A brighter score and a different voice, with the music's drop timed to the first demo frame and a sound for every snap, save, keypress and new window.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Behind one shot</h2>
+      <div class="pair">
+        <figure><img src="media/desk-plate.jpg?v=1" alt="Generated loft shot with a blank monitor" loading="lazy"><figcaption><b>Generated plate.</b> The monitor was generated blank, with a locked-off camera.</figcaption></figure>
+        <figure><img src="media/desk-final.jpg?v=1" alt="Final frame with a cluttered desktop fitted onto the angled monitor" loading="lazy"><figcaption><b>Final frame.</b> A cluttered desktop is fitted onto the angled screen in perspective, with focus hopping between windows.</figcaption></figure>
+      </div>
+    </section>
+  </div>
+
   <div class="note">
-    <p>GlowPilot's interface isn't public, so the desktop, toolbar, logo and colours here are stand-ins based on the job post. In the paid film, they're replaced with screen captures of the real app.</p>
-    <p>Unsolicited spec sample. Not produced or approved by GlowPilot.</p>
+    <p>GlowPilot's interface isn't public, so the desktop, toolbar, logo and colours in its film are stand-ins based on the job post. In the paid film, they're replaced with screen captures of the real app. Tidypane is a made-up product, built to show a second look.</p>
+    <p>Unsolicited spec samples. Not produced or approved by GlowPilot.</p>
   </div>
 </main>
 </body>
