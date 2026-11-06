@@ -21,7 +21,7 @@
          font-family: Inter, system-ui, sans-serif; line-height: 1.55; padding: clamp(36px, 7vh, 72px) 20px 56px; }
   main { width: min(1120px, 100%); margin: 0 auto; }
   .kicker { margin: 0; text-align: center; font-weight: 600; font-size: 12px; letter-spacing: .32em; text-transform: uppercase; color: var(--glow); padding-left: .32em; }
-  h1 { font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(32px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -.02em; text-align: center; margin: 14px 0 10px; }
+  h1 { font-family: Manrope, Inter, sans-serif; font-weight: 800; font-size: clamp(32px, 4.6vw, 52px); line-height: 1.08; letter-spacing: -.02em; text-align: center; margin: 14px 0 clamp(24px, 4vh, 40px); }
   h1 em { font-style: normal; background: linear-gradient(180deg, var(--hot), var(--glow) 55%, var(--ember)); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .sub { text-align: center; color: var(--mute); font-size: 15px; margin: 0 0 clamp(24px, 4vh, 40px); }
   .player { border-radius: 14px; padding: 1px; background: linear-gradient(135deg, rgba(255,181,71,.55), rgba(255,255,255,.06) 40%, rgba(255,122,61,.35));
@@ -54,22 +54,12 @@
 <main>
   <p class="kicker">Spec sample · GlowPilot</p>
   <h1>The first 29 seconds of a <em>GlowPilot</em> sales film</h1>
-  <p class="sub">16:9 · 1920 × 1080 · cinematic AI shots, a software demo, narration, music and sound design</p>
 
   <div class="player">
     <video controls playsinline preload="metadata" poster="media/glowpilot-poster.jpg?v=1">
       <source src="media/glowpilot-snippet.mp4?v=1" type="video/mp4">
     </video>
   </div>
-
-  <section>
-    <h2>What's in the cut</h2>
-    <div class="cols">
-      <div class="card"><b><i></i>Cinematic AI shots</b><p>A packed auditorium, a viewer losing the thread, and a glass-cursor hero shot. Each was generated, checked frame by frame, and graded to one look.</p></div>
-      <div class="card"><b><i></i>Software demo</b><p>A Windows desktop filmed with a virtual camera. The cursor glow, click ripples, spotlight, zoom lens and pen each land on the narrator's word.</p></div>
-      <div class="card"><b><i></i>Narration and sound</b><p>A calm voiceover, a music cue cut so its drop hits the first frame of the demo, and a sound for every click, dim, zoom and pen stroke.</p></div>
-    </div>
-  </section>
 
   <section>
     <h2>Behind one shot</h2>
@@ -80,9 +70,8 @@
   </section>
 
   <div class="film2">
-    <p class="kicker">Second sample · made-up product</p>
-    <h1>Same format, new product: <em>Tidypane</em></h1>
-    <p class="sub">A window-layout app for Windows · 16:9 · 1920 × 1080 · 29 s · a daylight look, a light interface, a different voice and score</p>
+    <p class="kicker">Second sample</p>
+    <h1><em>Tidypane</em></h1>
 
     <div class="player">
       <video controls playsinline preload="metadata" poster="media/tidypane-poster.jpg?v=1">
@@ -91,27 +80,12 @@
     </div>
 
     <section>
-      <h2>What's in the cut</h2>
-      <div class="cols">
-        <div class="card"><b><i></i>Cinematic AI shots</b><p>A loft desk, the reverse close-up, glass panes that lock into a layout, and the same man at golden hour. Lighting and set stay consistent from both sides of the desk.</p></div>
-        <div class="card"><b><i></i>Software demo</b><p>Drag a window and the snap zones appear. Save a layout, let the windows scatter, then bring it all back with one key. A chat app opens where its rule puts it.</p></div>
-        <div class="card"><b><i></i>Narration and sound</b><p>A brighter score and a different voice, with the music's drop timed to the first demo frame and a sound for every snap, save, keypress and new window.</p></div>
-      </div>
-    </section>
-
-    <section>
       <h2>Behind one shot</h2>
       <div class="pair">
         <figure><img src="media/desk-plate.jpg?v=1" alt="Generated loft shot with a blank monitor" loading="lazy"><figcaption><b>Generated plate.</b> The monitor was generated blank, with a locked-off camera.</figcaption></figure>
         <figure><img src="media/desk-final.jpg?v=1" alt="Final frame with a cluttered desktop fitted onto the angled monitor" loading="lazy"><figcaption><b>Final frame.</b> A cluttered desktop is fitted onto the angled screen in perspective, with focus hopping between windows.</figcaption></figure>
       </div>
     </section>
-  </div>
-
-  <div class="note">
-    <p>GlowPilot's interface isn't public, so the desktop, toolbar, logo and colours in its film are stand-ins based on the job post. In the paid film, they're replaced with screen captures of the real app. Tidypane is a made-up product, built to show a second look.</p>
-    <p>Unsolicited spec samples. Not produced or approved by GlowPilot.</p>
-  </div>
-</main>
+  </div></main>
 </body>
 </html>
